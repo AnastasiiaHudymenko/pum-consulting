@@ -1,0 +1,48 @@
+.listCard {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 14px 23px 0px rgba(28, 37, 44, 0.08);
+}
+
+.thumb {
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+
+  border-radius: 19px 19px 19px 0px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.wrapContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.title {
+  text-align: center;
+  color: var(--dark-title-color);
+  font-family: Avenir Next;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: var(--dark-title-color);
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}

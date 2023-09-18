@@ -1,0 +1,26 @@
+.btn {
+  padding: 14px 34px;
+
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 14px 23px 0px rgba(28, 37, 44, 0.08);
+
+  font-family: Avenir Next;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+
+  cursor: pointer;
+}
+
+.light {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color-dark);
+}
+
+.dark {
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
+
+  border: 1px solid var(--primary-color-light);
+}

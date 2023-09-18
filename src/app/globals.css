@@ -1,0 +1,27 @@
+@import "normalize.css/normalize.css";
+
+:root {
+  --primary-color-dark: #6d31d0;
+  --primary-color-light: #ffdb80;
+  --dark-title-color: #434364;
+
+  --bcg-color-header: linear-gradient(90deg, #53269d 0%, #6d31d0 100.2%);
+  --bcg-color-primary-light: linear-gradient(90deg, #ffeb80 0%, #fdbfa3 100.2%);
+  --bcg-color-primary-dark: linear-gradient(90deg, #6d31d0 0%, #828cde 100.2%);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

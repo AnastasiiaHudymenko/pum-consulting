@@ -1,0 +1,80 @@
+.section {
+  padding: 40px 0;
+  text-align: center;
+  background: linear-gradient(#e66465, #9198e5);
+  background-image: linear-gradient(
+      180deg,
+      #b7d6ef 50.52%,
+      rgba(183, 214, 239, 0) 100%
+    ),
+    url("../../../public/mobile/sea.png");
+  background-position: center;
+  background-size: cover;
+  animation: slide 20s linear infinite 1s;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.title {
+  color: #434364;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+}
+
+.descTitle {
+  color: #434364;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.desc {
+  color: #434364;
+  text-align: center;
+  text-shadow: 0px 0px 80px #fff;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+@keyframes slide {
+  0%,
+  10%,
+  20% {
+    background-image: url("../../../public/mobile/sea.png"); /* Исходное изображение */
+    background-position: center;
+    background-size: cover;
+  }
+  30%,
+  40%,
+  50% {
+    background-image: url("../../../public/tablet/home.png"); /* Измененное изображение */
+    background-position: center;
+    background-size: cover;
+  }
+  60%,
+  70%,
+  80% {
+    background-image: url("../../../public/mobile/plane.jpg"); /* Возвращаемся к исходному изображению */
+    background-position: center;
+    background-size: cover;
+  }
+  90%,
+  100% {
+    background-image: url("../../../public/tablet/family.png"); /* Возвращаемся к исходному изображению */
+    background-position: center;
+    background-size: cover;
+  }
+}

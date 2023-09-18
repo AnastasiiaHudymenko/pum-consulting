@@ -1,0 +1,11 @@
+.header {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 30px;
+  background: var(--bcg-color-header);
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
