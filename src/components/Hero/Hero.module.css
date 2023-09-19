@@ -1,16 +1,16 @@
 .section {
   padding: 40px 0;
   text-align: center;
-  background: linear-gradient(#e66465, #9198e5);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       180deg,
-      #b7d6ef 50.52%,
+      rgba(183, 214, 239, 0.83) 32.29%,
+      #b7d6ef 59.9%,
       rgba(183, 214, 239, 0) 100%
     ),
     url("../../../public/mobile/sea.png");
   background-position: center;
-  background-size: cover;
-  animation: slide 20s linear infinite 1s;
+  background-size: cover; */
+  animation: slide 30s linear infinite 1s;
 }
 
 .container {
@@ -51,30 +51,51 @@
 
 @keyframes slide {
   0%,
-  10%,
-  20% {
-    background-image: url("../../../public/mobile/sea.png"); /* Исходное изображение */
-    background-position: center;
-    background-size: cover;
+  10% {
+    background-image: url("../../../public/mobile/sea.png"),
+      linear-gradient(
+        180deg,
+        rgba(183, 214, 239, 0.83) 32.29%,
+        #b7d6ef 59.9%,
+        rgba(183, 214, 239, 0) 100%
+      );
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-  30%,
+  20%,
+  30% {
+    background-image: url("../../../public/tablet/home.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   40%,
   50% {
-    background-image: url("../../../public/tablet/home.png"); /* Измененное изображение */
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+        180deg,
+        #8ea1bd 50.52%,
+        #8ea1bd 77.29%,
+        rgba(142, 161, 189, 0) 100%
+      ),
+      url("../../../public/mobile/plane.jpg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   60%,
   70%,
   80% {
-    background-image: url("../../../public/mobile/plane.jpg"); /* Возвращаемся к исходному изображению */
-    background-position: center;
+    background-image: url("../../../public/tablet/family.png");
+    background-position: top;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   90%,
   100% {
-    background-image: url("../../../public/tablet/family.png"); /* Возвращаемся к исходному изображению */
-    background-position: center;
+    background-image: url("../../../public/mobile/sea.png");
+    background-position: top;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 }

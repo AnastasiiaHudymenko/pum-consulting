@@ -25,7 +25,7 @@ export const Hero = () => {
         </p>
         <BtnPrimary text="Find Out More" color="light" />
       </div>
-      <ScrollCarousel />
+      {/* <ScrollCarousel /> */}
     </section>
   );
 };
