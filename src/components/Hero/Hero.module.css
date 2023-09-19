@@ -1,15 +1,10 @@
 .section {
   padding: 40px 0;
   text-align: center;
-  /* background-image: linear-gradient(
-      180deg,
-      rgba(183, 214, 239, 0.83) 32.29%,
-      #b7d6ef 59.9%,
-      rgba(183, 214, 239, 0) 100%
-    ),
-    url("../../../public/mobile/sea.png");
-  background-position: center;
-  background-size: cover; */
+  background-image: url("../../../public/ocean-tablet.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: slide 30s linear infinite 1s;
 }
 
@@ -18,17 +13,22 @@
 }
 
 .title {
-  color: #434364;
-  text-align: center;
+  color: #fff;
+
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px; /* 111.111% */
 }
 
+.title::after {
+  content: "Relocation to Cyprus";
+  animation: titleTextChange 30s linear infinite 1s;
+}
+
 .descTitle {
-  color: #434364;
-  text-align: center;
+  color: #fff;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -36,9 +36,14 @@
   margin-bottom: 30px;
 }
 
+.descTitle::after {
+  content: "Seamless – Exceptional – Experience.";
+  animation: descTitleTextChange 30s linear infinite 1s;
+}
+
 .desc {
-  color: #434364;
-  text-align: center;
+  color: #fff;
+
   text-shadow: 0px 0px 80px #fff;
   font-family: Avenir Next;
   font-size: 16px;
@@ -49,53 +54,250 @@
   margin-bottom: 30px;
 }
 
+.desc::after {
+  content: "The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need to thrive.";
+  color: #fff;
+  animation: descTextChange 30s linear infinite 1s;
+}
+
+@keyframes titleTextChange {
+  0%,
+  10% {
+    content: "Relocation to Cyprus";
+    color: #fff;
+  }
+
+  20%,
+  30% {
+    content: "Relocation to Cyprus";
+    color: #434364;
+  }
+  40%,
+  50% {
+    content: "Family Relocation";
+    color: #fff;
+  }
+  60%,
+  70%,
+  80% {
+    content: "Moving to Cyprus";
+    color: #434364;
+  }
+  90%,
+  100% {
+    content: "Relocation to Cyprus";
+    color: #fff;
+  }
+}
+
+@keyframes descTitleTextChange {
+  0%,
+  10% {
+    content: "Seamless – Exceptional – Experience.";
+    color: #fff;
+  }
+
+  20%,
+  30% {
+    content: "Seamless – Exceptional – Experience.";
+    color: #434364;
+  }
+  40%,
+  50% {
+    content: "Seamless – Exceptional – Experience.";
+    color: #fff;
+  }
+  60%,
+  70%,
+  80% {
+    content: "Seamless – Exceptional – Experience.";
+    color: #434364;
+  }
+  90%,
+  100% {
+    content: "Seamless – Exceptional – Experience.";
+    color: #fff;
+  }
+}
+
+@keyframes descTextChange {
+  0%,
+  10% {
+    content: "The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need to thrive.";
+    color: #fff;
+  }
+
+  20%,
+  30% {
+    content: " Real estate has become a flourishing type of investment on the island, with an increasing number of people seeking to invest in residential and commercial property projects in Cyprus. With a confident and stable economic outlook,it is a great time to consider investing in Cyprus property. ";
+    color: #434364;
+  }
+  40%,
+  50% {
+    content: "Globally known as one of the safest places to live in the world, Cyprus is the ideal location for families. The healthy lifestyle and family-friendly communities have much to offer to every member of your family.";
+    color: #fff;
+  }
+  60%,
+  70%,
+  80% {
+    content: "Thousands of individuals and families from every part of the globe have immigrated to Cyprus after discovering their perfect place to call home. The island is now one of the most dominant destinations with huge expat communities.";
+    color: #434364;
+  }
+  90%,
+  100% {
+    content: "The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need to thrive.";
+    color: #fff;
+  }
+}
+
 @keyframes slide {
   0%,
   10% {
-    background-image: url("../../../public/mobile/sea.png"),
-      linear-gradient(
-        180deg,
-        rgba(183, 214, 239, 0.83) 32.29%,
-        #b7d6ef 59.9%,
-        rgba(183, 214, 239, 0) 100%
-      );
+    background-image: url("../../../public/ocean-tablet.png");
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   20%,
   30% {
-    background-image: url("../../../public/tablet/home.png");
+    background-image: url("../../../public/home.-tablet.png");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
   }
   40%,
   50% {
-    background-image: linear-gradient(
-        180deg,
-        #8ea1bd 50.52%,
-        #8ea1bd 77.29%,
-        rgba(142, 161, 189, 0) 100%
-      ),
-      url("../../../public/mobile/plane.jpg");
+    background-image: url("../../../public/plane-tablet.png");
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   60%,
   70%,
   80% {
-    background-image: url("../../../public/tablet/family.png");
-    background-position: top;
+    background-image: url("../../../public/family-tablet.png");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
   90%,
   100% {
-    background-image: url("../../../public/mobile/sea.png");
-    background-position: top;
+    background-image: url("../../../public/ocean-tablet.png");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 140px 55px 20px 55px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section {
+    background-image: url("../../../public/desk1000/ocean.png");
+    text-align: start;
+  }
+  .container {
+    width: 500px;
+  }
+
+  @keyframes slide {
+    0%,
+    10% {
+      background-image: url("../../../public/desk1000/ocean.png");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    20%,
+    30% {
+      background-image: url("../../../public/desk1000/home.png");
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    40%,
+    50% {
+      background-image: url("../../../public/desk1000/plane.png");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    60%,
+    70%,
+    80% {
+      background-image: url("../../../public/desk1000/family.png");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    90%,
+    100% {
+      background-image: url("../../../public/desk1000/ocean.png");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section {
+    background-image: url("../../../public/desktop/ocean.jpg");
+    padding: 130px 55px 60px 55px;
+  }
+
+  @keyframes slide {
+    0%,
+    10% {
+      background-image: url("../../../public/desktop/ocean.jpg");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    20%,
+    30% {
+      background-image: url("../../../public/desktop/home.jpg");
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    40%,
+    50% {
+      background-image: url("../../../public/desktop/plane.jpg");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    60%,
+    70%,
+    80% {
+      background-image: url("../../../public/desktop/family.jpg");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    90%,
+    100% {
+      background-image: url("../../../public/desktop/ocean.jpg");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
   }
 }
