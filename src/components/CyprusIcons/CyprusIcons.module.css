@@ -1,0 +1,66 @@
+.listCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background: linear-gradient(180deg, #828cde -21.43%, #6d31d0 201.93%); */
+  margin-bottom: 24px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
+
+.title {
+  color: #6d31d0;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.desc {
+  color: #434364;
+  text-align: center;
+
+  font-family: Avenir Next;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .listCard {
+    gap: 100px;
+    width: 750px;
+
+    margin: auto;
+  }
+  .itemCard {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .listCard {
+    width: 100%;
+  }
+}
