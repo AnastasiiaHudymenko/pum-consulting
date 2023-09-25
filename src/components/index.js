@@ -4,3 +4,4 @@ export * from "./SectionServices/SectionServices";
 export * from "./QuestionsCards/QuestionsCards";
 export * from "./MapCardsSection/MapCardsSection";
 export * from "./SectionChoose/SectionChoose";
+export * from "./OurPartners/OurPartners";

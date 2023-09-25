@@ -11,6 +11,7 @@
   font-weight: 600;
   line-height: 29px; /* 72.5% */
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .desc {
