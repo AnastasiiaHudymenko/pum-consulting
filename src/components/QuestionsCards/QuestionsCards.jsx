@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 
-import styles from "./QuestionsCards.module.css";
-import "react-multi-carousel/lib/styles.css";
+// import styles from "./QuestionsCards.module.css";
+// import "react-multi-carousel/lib/styles.css";
 
 const questionsCardsArr = [
   {
@@ -79,86 +79,86 @@ const questionsCardsArr = [
   },
 ];
 
-export const QuestionsCards = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 1400 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    desktop: {
-      breakpoint: { max: 1399, min: 1000 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 999, min: 461 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 646, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
-  return (
-    <Carousel
-      swipeable={false}
-      draggable={false}
-      showDots={true}
-      responsive={responsive}
-      ssr={true}
-      infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={5000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
-      // containerClass="carousel-container"
-      containerClass={styles.container}
-      // removeArrowOnDeviceType={["tablet", "mobile"]}
-      // deviceType={this.props.deviceType}
-      dotListClass="custom-dot-list-style"
-      // itemClass="carousel-item-padding-40-px"
-    >
-      {questionsCardsArr.map((card, i) => (
-        <div key={i} className={styles.wrap}>
-          <div className={styles.thumb}>
-            <Image
-              width={320}
-              height={200}
-              src="/img-questions.png"
-              alt="people on the beach"
-            />
-            <span className={styles.label}>{card.label}</span>
-          </div>
-          <div className={styles.wrapContent}>
-            <h4 className={styles.title}>{card.title}</h4>
-            <p className={styles.desc}>{card.desc}</p>
-          </div>
-        </div>
-      ))}
-    </Carousel>
+// export const QuestionsCards = () => {
+//   const responsive = {
+//     superLargeDesktop: {
+//       breakpoint: { max: 4000, min: 1400 },
+//       items: 3,
+//       slidesToSlide: 3,
+//     },
+//     desktop: {
+//       breakpoint: { max: 1399, min: 1000 },
+//       items: 3,
+//       slidesToSlide: 3,
+//     },
+//     tablet: {
+//       breakpoint: { max: 999, min: 461 },
+//       items: 2,
+//       slidesToSlide: 2,
+//     },
+//     mobile: {
+//       breakpoint: { max: 646, min: 0 },
+//       items: 1,
+//       slidesToSlide: 1,
+//     },
+//   };
+//   return (
+//     <Carousel
+//       swipeable={false}
+//       draggable={false}
+//       showDots={true}
+//       responsive={responsive}
+//       ssr={true}
+//       infinite={true}
+//       autoPlay={true}
+//       autoPlaySpeed={5000}
+//       keyBoardControl={true}
+//       customTransition="all .5"
+//       transitionDuration={500}
+//       // containerClass="carousel-container"
+//       containerClass={styles.container}
+//       // removeArrowOnDeviceType={["tablet", "mobile"]}
+//       // deviceType={this.props.deviceType}
+//       dotListClass="custom-dot-list-style"
+//       // itemClass="carousel-item-padding-40-px"
+//     >
+//       {questionsCardsArr.map((card, i) => (
+//         <div key={i} className={styles.wrap}>
+//           <div className={styles.thumb}>
+//             <Image
+//               width={320}
+//               height={200}
+//               src="/img-questions.png"
+//               alt="people on the beach"
+//             />
+//             <span className={styles.label}>{card.label}</span>
+//           </div>
+//           <div className={styles.wrapContent}>
+//             <h4 className={styles.title}>{card.title}</h4>
+//             <p className={styles.desc}>{card.desc}</p>
+//           </div>
+//         </div>
+//       ))}
+//     </Carousel>
 
-    // <div className={styles.container}>
-    //   {questionsCardsArr.map((card, i) => (
-    //     <div key={i} className={styles.wrap}>
-    //       <div className={styles.thumb}>
-    //         <Image
-    //           width={320}
-    //           height={200}
-    //           src="/img-questions.png"
-    //           alt="people on the beach"
-    //         />
-    //         <span className={styles.label}>{card.label}</span>
-    //       </div>
-    //       <div className={styles.wrapContent}>
-    //         <h4 className={styles.title}>{card.title}</h4>
-    //         <p className={styles.desc}>{card.desc}</p>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
-  );
-};
+//     // <div className={styles.container}>
+//     //   {questionsCardsArr.map((card, i) => (
+//     //     <div key={i} className={styles.wrap}>
+//     //       <div className={styles.thumb}>
+//     //         <Image
+//     //           width={320}
+//     //           height={200}
+//     //           src="/img-questions.png"
+//     //           alt="people on the beach"
+//     //         />
+//     //         <span className={styles.label}>{card.label}</span>
+//     //       </div>
+//     //       <div className={styles.wrapContent}>
+//     //         <h4 className={styles.title}>{card.title}</h4>
+//     //         <p className={styles.desc}>{card.desc}</p>
+//     //       </div>
+//     //     </div>
+//     //   ))}
+//     // </div>
+//   );
+// };

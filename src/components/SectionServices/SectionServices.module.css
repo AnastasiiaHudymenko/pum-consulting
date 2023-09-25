@@ -1,0 +1,17 @@
+.container {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #828cde -21.43%, #6d31d0 201.93%);
+}
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 36px;
+
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #fdbfa3;
+  margin-bottom: 40px;
+}

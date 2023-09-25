@@ -1,0 +1,210 @@
+.container {
+  position: relative;
+  width: 315px;
+  height: 290px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.mainTitle {
+  color: #6d31d0;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.subTitle {
+  color: #434364;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.wrap {
+  position: absolute;
+
+  transition: all 0.4s linear;
+
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  color: #fff;
+
+  font-family: Avenir Next;
+  font-size: 10px;
+
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.titlePaphos {
+  top: 45px;
+  left: 14px;
+}
+
+.titleLimassol {
+  top: 31px;
+  left: 22px;
+}
+
+.titleNicosia {
+  top: 39px;
+  left: 65px;
+  color: #434364;
+}
+
+.titleLarnaka {
+  top: 43px;
+  left: 29px;
+  color: #434364;
+}
+
+.partPaphos {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.wrap:hover {
+  transform: scale(1.1);
+  z-index: 200;
+}
+
+.partLimassol {
+  left: 57px;
+  bottom: -20px;
+}
+
+.partNicosia {
+  left: 43px;
+  top: 169px;
+}
+
+.partLarnaka {
+  right: 60px;
+  bottom: 7px;
+}
+
+.partOne {
+  right: 5px;
+  bottom: 65px;
+}
+
+.partTwo {
+  top: 150px;
+  left: 109px;
+}
+
+.imgPaphos {
+  width: 82px;
+}
+
+.imgLimassol {
+  width: 101px;
+}
+
+.imgNicosia {
+  width: 180px;
+}
+
+.imgLarnaka {
+  width: 128px;
+}
+
+.imgNoName1,
+.imgNoName2 {
+  width: 120px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 681px;
+    height: 414px;
+  }
+  .imgPaphos {
+    width: 152px;
+    height: 181px;
+  }
+
+  .imgLimassol {
+    width: 187px;
+    height: 143px;
+  }
+
+  .imgNicosia {
+    width: 299px;
+    height: 141px;
+  }
+
+  .imgLarnaka {
+    width: 224px;
+    height: 141px;
+  }
+
+  .imgNoName1 {
+    width: 302px;
+    height: 263px;
+  }
+
+  .imgNoName2 {
+    width: 216px;
+    height: 53px;
+  }
+
+  .partLimassol {
+    left: 104px;
+    bottom: -35px;
+  }
+
+  .partLarnaka {
+    right: 211px;
+    bottom: 21px;
+  }
+
+  .partNicosia {
+    left: 86px;
+    top: 200px;
+  }
+
+  .partOne {
+    right: 13px;
+    bottom: 101px;
+  }
+
+  .partTwo {
+    top: 165px;
+    left: 189px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .titlePaphos {
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .titleLimassol,
+  .titleNicosia {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .titleLarnaka {
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}

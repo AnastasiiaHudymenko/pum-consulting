@@ -1,0 +1,41 @@
+.container {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 12.80369px 15.36443px 13px 0px rgba(0, 0, 0, 0.04);
+  width: 320px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.wrapImg {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.img {
+  width: 86px;
+  height: 79px;
+}
+
+.title {
+  color: #434364;
+
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #434364;
+  text-align: center;
+  padding: 0 5px;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}

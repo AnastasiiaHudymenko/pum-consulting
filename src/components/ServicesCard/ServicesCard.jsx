@@ -29,7 +29,7 @@ export const ServicesCard = () => {
   return (
     <ul className={styles.listCard}>
       {servicesCardsImg.map((img, i) => (
-        <li style={{ width: "320px" }} key={i}>
+        <li className={styles.itemCard} key={i}>
           <div className={styles.thumb}>
             <picture>
               <source
